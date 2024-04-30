@@ -39,7 +39,7 @@ const LineChart = () => {
 
     return (
 
-        <div className='   '>
+        <div className='  max-w-full  '>
             <div className='bg-white' >
                 <Line
                     data={{
@@ -65,7 +65,7 @@ const LineChart = () => {
             <div className='h-5' >
 
             </div>
-            <div className='bg-white'>
+            <div className='bg-white '>
                 <Line height={400} width={600}
                     data={{
                         labels: Object.keys(data.cases),
@@ -129,61 +129,3 @@ export default LineChart
 
 
 
-
-
-
-
-
-
-// import { Tooltip } from '@material-tailwind/react';
-// import React from 'react'
-// import { CartesianGrid, LineChart as LChart, Line, XAxis, YAxis } from 'recharts';
-
-// import {
-//     QueryClient,
-//     QueryClientProvider,
-//     useQuery,
-// } from '@tanstack/react-query'
-
-
-
-// const data = [
-//     { name: 'Page A', uv: 10, },
-//     { name: 'Page B', uv: 20, },
-//     { name: 'Page C', uv: 20, },
-
-// ];
-
-// const LineChart = () => {
-
-//     const { isPending, error, data } = useQuery({
-//         queryKey: ['repoData'],
-//         queryFn: () =>
-//             fetch('https://disease.sh/v3/covid-19/historical/all?lastdays=all')
-//                 .then((res) =>
-//                     res.json(),
-//                 ).then((data) => {
-//                     console.log(data)
-//                     return data
-//                 }
-//                 ),
-//     })
-
-//     if (isPending) return <>'Loading...'</>
-
-//     if (error) return <>An error has occurred: ' + error.message</>
-
-
-
-//     return (
-//         <LChart className='bg-white' width={600} height={300} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
-//             <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-//             <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-//             <XAxis dataKey="name" />
-//             <YAxis />
-//             <Tooltip />
-//         </LChart>
-//     )
-// }
-
-// export default LineChart

@@ -12,7 +12,7 @@ const ContactCard = ({_id, firstname, lastname,phone,status}: {_id: string ,firs
     console.log(_id)
   }
   return (
-    <div id={_id} className='bg-slate-500 w-72  m-2 rounded flex justify-between'>
+    <div id={_id} className='bg-white w-72 p-2  m-2 rounded flex  justify-between'>
         
         <div className='box-border p-1 flex flex-col' >
             <div className="firstname text-md p-1">{firstname + " " + lastname}</div>
@@ -21,8 +21,8 @@ const ContactCard = ({_id, firstname, lastname,phone,status}: {_id: string ,firs
 
         </div>
         <div className='actions flex flex-col justify-center'>
-            <button onClick={() => navigate(`/contactform/${_id}`)} className='bg-green-500 rounded p-2 m-2'>Edit</button>
-            <button onClick={() => handleDelete()} className='bg-red-500 rounded p-2 m-2'>Delete</button>
+            <button onClick={() => navigate(`/contactform/${_id}`)} className='text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800'>Edit</button>
+            <button onClick={() => handleDelete()} className='text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900'>Delete</button>
         </div>
     </div>
   )

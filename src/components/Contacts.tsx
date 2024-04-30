@@ -22,11 +22,14 @@ const Contacts = () => {
           <div onClick={() => navigate("/contactform/0")}>Add Contact</div>
         </button>
       </div>
+      <div className='flex flex-wrap'>
+
       {
         contacts.map((contact: { _id: string ; firstName: string; lastName: string; phone: string; isActive: boolean; }) => {
           return <ContactCard key={contact._id} _id={contact._id} firstname={contact.firstName} lastname={contact.lastName} phone={contact.phone} status={contact.isActive ? 'active' : 'inactive'} />
         })
       }
+      </div>
       
     </div>
   )
