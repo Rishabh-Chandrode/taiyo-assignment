@@ -3,7 +3,7 @@ interface IContact {
     firstName: string
     lastName: string
     phone: string
-    status: string
+    isActive: boolean
   }
   
   type IntialState = {
