@@ -26,7 +26,7 @@ const Contacts = () => {
 
       {
         contacts.map((contact: { _id: string ; firstName: string; lastName: string; phone: string; isActive: boolean; }) => {
-          return <ContactCard key={contact._id} _id={contact._id} firstname={contact.firstName} lastname={contact.lastName} phone={contact.phone} status={contact.isActive ? 'active' : 'inactive'} />
+          return <ContactCard key={contact._id} _id={contact._id} firstname={contact.firstName} lastname={contact.lastName} phone={contact.phone} status={contact.isActive ? 'Active' : 'Inactive'} />
         })
       }
       </div>

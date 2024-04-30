@@ -39,9 +39,9 @@ const LineChart = () => {
 
     return (
 
-        <div className='  max-w-full  '>
-            <div className='bg-white' >
-                <Line
+        <div className='  max-w-full sm:w-full  '>
+            <div className='bg-white w-[75vw] m-auto md:w-full ' >
+                <Line height={400} width={600}
                     data={{
                         labels: Object.keys(data.cases),
                         datasets: [
@@ -65,7 +65,7 @@ const LineChart = () => {
             <div className='h-5' >
 
             </div>
-            <div className='bg-white '>
+            <div className='bg-white w-[75vw] m-auto md:w-full '>
                 <Line height={400} width={600}
                     data={{
                         labels: Object.keys(data.cases),
@@ -90,7 +90,7 @@ const LineChart = () => {
 
             <div className='h-5'> </div>
 
-            <div className='bg-white'>
+            <div className='bg-white w-[75vw] m-auto md:w-full'>
                 <Line height={400} width={600}
                     data={{
                         labels: Object.keys(data.recovered),
