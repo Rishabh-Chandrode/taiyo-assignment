@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Contacts from './components/Contacts';
 import MapsAndCharts from './components/MapsAndCharts';
 import ContactForm from './components/ContactForm';
+import Map from './components/Map';
 
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
           <Route path='contactform/:id' element = {<ContactForm/>}/>
           <Route path="contacts" element={<Contacts />} />
           <Route path="mapsandcharts" element={<MapsAndCharts/>} />
+          <Route path="temp" element={<Map/>} />
+          
         </Route>
       </Routes>
     </BrowserRouter>

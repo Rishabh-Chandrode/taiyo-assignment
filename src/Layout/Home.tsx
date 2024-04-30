@@ -6,7 +6,7 @@ import { Outlet, useNavigate } from 'react-router-dom'
 const Home = () => {
   const navigate = useNavigate();
   return (
-    <div className='layout  h-[100vh] bg-slate-600'>
+    <div className='layout   bg-slate-600'>
 
 
       <nav className="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
@@ -60,7 +60,7 @@ const Home = () => {
         </div>
       </aside>
 
-      <div className="p-4 flex justify-center sm:ml-64">
+      <div className="p-4 flex  justify-center  sm:ml-64 ">
         <Outlet />
       </div>
 
